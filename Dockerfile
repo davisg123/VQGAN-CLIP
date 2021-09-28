@@ -1,8 +1,8 @@
-FROM python:3.9
+FROM nvidia/cuda:11.1
 
-RUN apt-get update
-RUN apt-get install -y curl
-RUN apt install -y libncurses5
+# RUN apt-get update
+# RUN apt-get install -y curl
+# RUN apt install -y libncurses5
 
 RUN pip install torch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 
