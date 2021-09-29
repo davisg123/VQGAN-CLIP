@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.1
+FROM nvidia/cuda:11.1-base
 
 # RUN apt-get update
 # RUN apt-get install -y curl
