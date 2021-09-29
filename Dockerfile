@@ -3,7 +3,7 @@ FROM nvidia/cuda:11.1-base-ubuntu20.04
 RUN apt-get update && apt-get install -y software-properties-common gcc && \
     add-apt-repository -y ppa:deadsnakes/ppa
 RUN apt-get update && apt-get install -y python3.9 python3-distutils python3-pip python3-apt
-RUN app-get install -y curl
+RUN apt-get install -y curl
 
 RUN pip install torch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 
