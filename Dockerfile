@@ -1,6 +1,7 @@
-FROM nvidia/cuda:11.1-base
+FROM nvidia/cuda:11.1-base-ubuntu20.04
 
-# RUN apt-get update
+RUN apt update
+RUN apt install python3.9
 # RUN apt-get install -y curl
 # RUN apt install -y libncurses5
 
