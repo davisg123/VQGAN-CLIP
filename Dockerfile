@@ -5,6 +5,8 @@ RUN apt install -y python3.9
 # RUN apt-get install -y curl
 # RUN apt install -y libncurses5
 
+RUN python -m ensurepip --upgrade
+
 RUN pip install torch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 
 RUN pip install ftfy regex tqdm omegaconf pytorch-lightning IPython kornia imageio imageio-ffmpeg einops torch_optimizer
